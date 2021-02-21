@@ -29,7 +29,7 @@
               <p class="text-gray-700 text-base">With N-key rollover (NKRO on wired mode only) you can register as many keys as you can press at once without missing out characters. It allows to use all the same media keys as conventional macOS.</p>
             </div>
             <div class="flex items-center">
-              <nuxt-link :to="`/dashboard/${i}`" class="bg-green-button text-white py-2 px-4 rounded"> Detail </nuxt-link>
+              <nuxt-link :to="`/dashboard/projects/${i}`" class="bg-green-button text-white py-2 px-4 rounded"> Detail </nuxt-link>
             </div>
           </div>
         </div>
