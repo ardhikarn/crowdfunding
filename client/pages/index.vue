@@ -189,7 +189,7 @@
                 <div>70%</div>
                 <div class="ml-auto font-semibold">Rp 75.000.000</div>
               </div>
-              <nuxt-link href="/projects/5" class="text-center mt-5 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-2 text-lg rounded-full"> Fund Now </nuxt-link>
+              <nuxt-link to="/projects/5" class="text-center mt-5 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-2 text-lg rounded-full"> Fund Now </nuxt-link>
             </div>
           </div>
         </div>
@@ -210,7 +210,7 @@
                 <div>10%</div>
                 <div class="ml-auto font-semibold">Rp 35.000.000</div>
               </div>
-              <nuxt-link href="/projects/6" class="text-center mt-5 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-2 text-lg rounded-full"> Fund Now </nuxt-link>
+              <nuxt-link to="/projects/6" class="text-center mt-5 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-2 text-lg rounded-full"> Fund Now </nuxt-link>
             </div>
           </div>
         </div>
