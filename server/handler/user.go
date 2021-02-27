@@ -1,6 +1,7 @@
 package handler
 
 import (
+	"crowdfunding/helper"
 	"crowdfunding/user"
 	"net/http"
 
@@ -30,6 +31,7 @@ func (h *userHandler) RegisterUser(c *gin.Context) {
 	if err != nil {
 		c.JSON(http.StatusBadRequest, nil)
 	}
+	response := helper.APIResponse("Account has been Registered", http.StatusOK, "success", user)
 
-	c.JSON(http.StatusOK, user)
+	c.JSON(http.StatusOK, response)
 }
