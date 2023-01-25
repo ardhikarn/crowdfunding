@@ -4,6 +4,7 @@ import (
 	"crowdfunding/helper"
 	"crowdfunding/user"
 	"net/http"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -16,10 +17,6 @@ func NewUserHandler(userService user.Service) *userHandler {
 }
 
 func (h *userHandler) RegisterUser(c *gin.Context) {
-	// tangkap input dari user
-	// map input dari user ke struct RegisterUserInput
-	// struct di atas kita passing sebagai parameter service
-
 	var input user.RegisterUserInput
 	err := c.ShouldBindJSON(&input)
 	if err != nil {

@@ -3,7 +3,7 @@ package user
 import "gorm.io/gorm"
 
 type Repository interface {
-	Simpan(user User) (User, error)
+	Save(user User) (User, error)
 }
 
 type repository struct {
@@ -14,7 +14,7 @@ func NewRepository(db *gorm.DB) *repository {
 	return &repository{db}
 }
 
-func (r *repository) Simpan(user User) (User, error) {
+func (r *repository) Save(user User) (User, error) {
 	err := r.db.Create(&user).Error
 	if err != nil {
 		return user, err
